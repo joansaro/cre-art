@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer, section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* Añade estilos adicionales según sea necesario para cada sección */
+
+#about-us, #contact, #reviews {
+    background-color: #f4f4f4;
+}
+
+#gallery {
+    /* Añade estilos específicos para la sección de la galería */
+    margin: 3px;
+}
+
+/* Media queries para responsive design */
+
+/* Pantallas pequeñas (móviles) */
+@media screen and (max-width: 767px) {
+    section {
+        padding: 10px;
+    }
+
+    .navbar{
+        background-color: burlywood;
+    }
+
+    .galery_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        margin: 20px;
+        width: 85%;
+    }
+
+    .card-img-top{
+        height: 500px;
+    }
+
+
+    .about-us_image{
+        width: 100%;
+    }
+
+    h3{
+        font-style: italic;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section {
+        padding: 15px;
+    }
+}
+
+/* Pantallas grandes (laptops) */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    section {
+        padding: 20px;
+    }
+}
+
+/* Pantallas extra grandes (monitores) */
+@media screen and (min-width: 1200px) {
+    section {
+        padding: 25px;
+    }
+
+        .separator{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
